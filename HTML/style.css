@@ -1,0 +1,9 @@
+.text {
+    background-color: aqua;
+}
+
+span {
+    color: rgb(229, 193, 193);
+    font-size: 20px;
+    background-color: rgb(244, 23, 23);
+}
