@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Lesson</title>
+</head>
+
+<body>
+    <h1>Student Registration</h1>
+    <!-- <form action="request.php" method="get"> -->
+    <form action="request.php" method="post">
+        <label for="name">Name</label>
+        <input type="text" name="stu_name" id="name">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="stu_email" id="email">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="stu_password" id="password">
+        <br><br>
+        <label for="phone">Phone No.</label>
+        <input type="number" name="stu_phone" id="phone">
+        <br><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="sty_dob" id="dob">
+        <br><br>
+        <label for="passport">Passport</label>
+        <input type="file" name="stu_passport" id="passport" accept="image/*">
+        <br><br>
+        <label for="">Gender</label>
+        <br><br>
+        <input type="radio" name="gender" id="male" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+        <br><br>
+        <select name="year" id="year">
+            <option value="">Choose Year</option>
+            <option value="1">Fist Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+        </select>
+        <br><br>
+        <button type="submit">Save</button>
+    </form>
+
+</body>
+
+</html>
