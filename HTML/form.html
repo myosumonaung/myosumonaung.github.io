@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <form method="post" action="https://google.com">
+        <label for="name">Name</label>
+        <input type="text" name="" id="name">
+        <br><br>
+        <label for="email">Email</label>
+        <input type="email" name="" id="email">
+        <br><br>
+        <label for="number">Phone</label>
+        <input type="number" name="" id="number">
+        <br><br>
+        <label for="password">Password</label>
+        <input type="password" name="" id="password">
+        <br><br>
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="" id="dob">
+        <br><br>
+        <label for="student_image">Image</label>
+        <input type="file" name="" id="student_image" accept=".png,.jpg">
+        <br><br>
+        <label for="year">Years</label>
+        <select id="year" name="student_year">
+            <!-- <option value="male">Male</option> -->
+            <!-- <option value="female">Female</option> -->
+             <option value="">Choose Your Year</option>
+             <option value="First">First Year</option>
+             <option value="Second">Second Year</option>
+             <option value="Third">Third Year</option>
+        </select>
+        <br><br>
+        <label for="">Gender</label>
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">Female</label>
+
+        <!-- person detail  -->
+        <div class="form-control">
+            <div class="heading-field">
+                <h3 class="field-head">Personal Details </h3>
+            </div>
+            <div class="field-inputs">
+                <div class="input-div">
+                    <input type="radio" id="male2" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female2" name="gender" value="female">
+                    <label for="female">Female</label><br>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br>
+                </div>
+            </div>
+        </div>
+        <!-- personal detail ends -->
+        <br><br>
+        <label for="">Hobby</label>
+        <br>
+        <input type="checkbox" name="travelling" id="travelling" value="Travelling">
+        <label for="travelling">Travelling</label>
+        <input type="checkbox" name="reading" id="reading" value="Reading">
+        <label for="reading">Reading</label>
+        <br><br>
+        <label for="address">Address</label><br>
+        <textarea name="student_address" id="address" rows="10" cols="50"></textarea>
+        <br><br>
+        <input type="text" id="" required value="32">
+        <input type="text" id="" readonly value="32">
+        <input type="email" name="" id="" placeholder="example@gmail.com">
+        <br><br>
+        <input type="time" name="" id="">
+        <input type="week" name="" id="">
+        <input type="month" name="" id="">
+        <input type="datetime-local" name="" id="">
+        <input type="color" name="" id="">
+        <input type="range" name="" id="">
+
+        <br><br>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+
+</html>
