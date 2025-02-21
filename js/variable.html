@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables</title>
+</head>
+
+<body>
+
+    <!-- <script src="custom.js"></script> -->
+    <h2>Three Types of Variables</h2>
+    <ul>
+        <li>var</li>
+        <li>let</li>
+        <li>const</li>
+    </ul>
+
+    <script>
+        var name = "Myo(Meave)"; // var is global variable
+        document.write(name);
+        document.write('<br>');
+        name = "Meave is my symbol.";
+        document.write(name);
+        document.write('<br>');
+
+        let fatherName = "U Than"; //block scope variable
+        document.write(fatherName);
+        document.write('<br>');
+        fatherName = "U Htike";
+        document.write(fatherName);
+        document.write('<br>'); {
+            let fatherName = "U Than Htike Aung";
+            document.write(fatherName);
+            document.write('<br>');
+        }
+
+        const motherName = "Daw Mon"; //cannot be Redeclared,Reassigned
+        document.write(motherName);
+        document.write('<br>');
+        motherName = "Ma Mon";
+        document.write(motherName);
+    </script>
+
+</body>
+
+</html>

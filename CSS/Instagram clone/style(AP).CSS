@@ -1,0 +1,28 @@
+html {
+    background-color: #8e8e8e;
+}
+
+body {
+    /* margin-top: 200px; */
+    width: 800px;
+    margin: 0 auto;
+    /* center */
+    background-color: rgb(141, 172, 93);
+    border: 5px solid;
+    padding-top: 20px;
+}
+
+img {
+    /* margin: 0 auto; */
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 5px 5px 5px #2e2ee1;
+}
+
+p>em {
+    text-decoration: line-through;
+}

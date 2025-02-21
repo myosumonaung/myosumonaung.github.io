@@ -1,0 +1,330 @@
+/* Universal Selector */
+
+* {
+    color: cadetblue;
+    font-size: 22px;
+}
+
+
+/* Tag/element selector */
+
+h1 {
+    color: blueviolet;
+    text-align: center;
+    /* margin: 10px 0; */
+}
+
+p {
+    color: orangered;
+    /* background-color: aqua; */
+    font-size: 15px;
+}
+
+span {
+    color: blue;
+}
+
+
+/* Attribute Selector */
+
+a[title="This is Searching Website!"] {
+    color: blueviolet;
+    font-size: 25px;
+}
+
+p[lang="kitty"] {
+    color: red;
+    background-color: black;
+}
+
+
+/* id selector */
+
+#image {
+    font-weight: bold;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+
+/* class selector */
+
+.love {
+    font-size: 30px;
+    font-style: italic;
+    line-height: 20px;
+    text-transform: uppercase;
+    word-spacing: 10px;
+}
+
+
+/* descendent selector */
+
+.desc a {
+    color: red;
+    text-decoration: none;
+    /* display: inline-block; */
+}
+
+
+/* child selector */
+
+.child>a {
+    color: greenyellow;
+    text-decoration: line-through;
+}
+
+.child>span>a {
+    color: black;
+    text-decoration: underline;
+}
+
+
+/* Pseudo Selector */
+
+a:link {
+    color: blueviolet;
+}
+
+a:hover {
+    color: brown;
+}
+
+a:active {
+    color: rgb(226, 61, 43);
+}
+
+a:visited {
+    color: cornflowerblue;
+}
+
+
+/* target */
+
+:target {
+    color: chartreuse;
+    border: 4px solid black;
+}
+
+div:target {
+    color: aquamarine;
+    padding: 5px;
+    border: 3px dotted green;
+}
+
+
+/* From "border.html" */
+
+.border1 {
+    border-left: 5px solid rgb(227, 95, 47);
+    background-color: ghostwhite;
+}
+
+.border2 {
+    border-width: 5px 10px;
+    border-style: dashed;
+    /* border-color: brown; */
+    border-radius: 5px;
+}
+
+#borderimg2 {
+    padding: 15px;
+    border: 15px solid transparent;
+    border-image-source: url(image/img1.jpg);
+    border-image-repeat: repeat;
+    border-image-slice: 30;
+}
+
+.border_style {
+    border-style: solid dashed dotted;
+}
+
+.linear-gradient {
+    width: 600px;
+    height: 400px;
+    background: linear-gradient(45deg, cyan, green);
+    border-radius: 20px;
+}
+
+
+/* Margin */
+
+.margin_padding {
+    border: 2px solid orange;
+    margin: 50px;
+    padding: 40px;
+}
+
+
+/* Layout */
+
+.inline {
+    border: 1px solid orchid;
+    font-size: 20px;
+    /* display: block; */
+    display: inline-block;
+    /* padding-right: 100px; */
+    width: 300px;
+}
+
+.block {
+    border: 2px solid black;
+    width: 300px;
+    /* display: inline; */
+    display: inline-block;
+}
+
+
+/* Float */
+
+.float_left img {
+    float: left;
+    width: 40%;
+    height: 400px;
+    margin-right: 10px;
+}
+
+.clear {
+    clear: left;
+}
+
+.float_right>img {
+    float: right;
+    width: 50%;
+    height: 450px;
+    /* margin: 10px; */
+    margin-left: 10px;
+}
+
+
+/* Grid */
+
+.grid1 div,
+.grid2 div,
+.grid3 div,
+.grid4 div,
+.grid5 div {
+    padding: 15px;
+    color: black;
+    text-align: center;
+}
+
+.grid1 {
+    display: grid;
+    /* grid-template-areas: ; */
+    grid-template-columns: auto auto auto;
+}
+
+.grid2 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 10px;
+}
+
+.grid3 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-row-gap: 10px;
+    background-color: blueviolet;
+    padding: 10px 0;
+}
+
+.grid4 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    background-color: chartreuse;
+    padding: 10px 0;
+    grid-gap: 15px;
+}
+
+.grid5 {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+.columnadd {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.rowadd {
+    grid-column-start: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+
+
+/* Position */
+
+.relative_parent {
+    border: 1px solid olive;
+    width: 1000px;
+    height: 350px;
+}
+
+.relative {
+    border: 2px solid orangered;
+    width: 500px;
+    height: 200px;
+    margin: 0%;
+    position: relative;
+    top: 20px;
+    left: 200px;
+}
+
+.absolute_parent {
+    border: 2px solid rgb(93, 80, 8);
+    width: 1000px;
+    height: 350px;
+    position: relative;
+}
+
+.absolute {
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    border: 3px solid black;
+    top: 100px;
+    right: 30px;
+}
+
+.position_fixed {
+    position: fixed;
+    /* bottom: 0; */
+    /* right: 0; */
+    border: 3px solid red;
+    top: 100px;
+    right: 100px;
+    width: 200px;
+    font-size: 20px;
+}
+
+
+/* Font */
+
+.online_font {
+    font-family: "Dancing Script", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: large;
+}
+
+.online_font2 {
+    font-family: "Lilita One", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 25px;
+}
+
+@font-face {
+    font-family: "PermanentMarker";
+    src: url("Font/PermanentMarker-Regular.ttf");
+}
+
+.offline_font {
+    font-family: "PermanentMarker";
+    color: black;
+    background-color: rgb(124, 236, 236);
+    padding: 15px;
+}

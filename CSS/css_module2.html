@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Module2</title>
+    <!-- <link rel="stylesheet" href=""> -->
+    <style>
+        .div_image_bg {
+            width: 100%;
+            height: 500px;
+            border: 1px solid black;
+            background-image: url("image/img1.jpg");
+        }
+        
+        .div_bg_repeat {
+            width: 100%;
+            /* height: 500px; */
+            background-image: url("image/img2.jpg");
+            /* background-repeat: no-repeat; */
+            height: 1250px;
+            background-repeat: repeat-y;
+        }
+        
+        .div_bg_position {
+            background-image: url("image/img1.jpgds");
+            width: 100%;
+            height: 500px;
+            border: 2px solid blue;
+            background-repeat: no-repeat;
+            /* background-position: top; */
+            background-position: center;
+            /* background-position: right; */
+        }
+        
+        .div_bg_attachment {
+            background-image: url("image/coding-girl.jpg");
+            width: 100%;
+            height: 500px;
+            background-repeat: no-repeat;
+            /* background-attachment: fixed; */
+            background-attachment: inherit;
+        }
+        /* CSS for borders */
+        
+        p.none_border {
+            border-style: none;
+        }
+        
+        p.hidden_border {
+            border-style: hidden;
+        }
+        
+        p.dotted_border {
+            border-style: dotted;
+        }
+        
+        p.dashed_border {
+            border-style: dashed;
+        }
+        
+        p {
+            border-width: 5px;
+            border-color: yellowgreen;
+        }
+        /* CSS for margins */
+        
+        .div_margin {
+            width: 500px;
+            height: 400px;
+            border: 3px solid red;
+            /* margin-top: 50px; */
+            /* margin-left: 100px; */
+            /* margin-bottom: 100px; */
+            margin: 0 auto;
+            /*center*/
+            /* padding-left: 50px; */
+            /* padding-top: 100px; */
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Bg Color</h2>
+    <ul>
+        <li>background color</li>
+        <li>background image</li>
+        <li>background repeat</li>
+        <li>background attachment</li>
+        <li>background position</li>
+    </ul>
+    <h2>Bg Color</h2>
+    <div style="width: 800px; height: 500px; background-color: blueviolet;">
+        <br>
+        <p style="background-color: aqua;">I'm paragraph.</p>
+    </div>
+
+    <h2>Bg Image</h2>
+    <div class="div_image_bg">
+        I'm a div with bg image.
+    </div>
+
+    <h2>Bg Image Repeat</h2>
+    <div class="div_bg_repeat">
+        I'm a div with bg repeat.
+    </div>
+
+    <h2>Bg Position</h2>
+    <div class="div_bg_position">
+        I'm a div with bg position.
+    </div>
+
+    <h2>Bg attachment</h2>
+    <div class="div_bg_attachment">
+        I'm a div with bg attachment.
+    </div>
+
+    <h2>CSS Borders</h2>
+    <p class="none_border">I'm a paragraph with border none.</p>
+    <p class="hidden_border">I'm a paragraph with border hidden.</p>
+    <p class="dotted_border">I'm a paragraph with border dotted.</p>
+    <p class="dashed_border">I'm a paragraph with border dashed.</p>
+    <p class="solid_border" style="border-style: solid;">I'm a paragraph with border solid.</p>
+    <p class="double_border" style="border-style: double;">I'm a paragraph with border double.</p>
+    <p class="groove_border" style="border-style: groove;">I'm a paragraph with border groove.</p>
+    <p class="ridge_border" style="border-style: ridge;">I'm a paragraph with border ridge.</p>
+    <p class="inset_border" style="border-style: inset;">I'm a paragraph with border inset.</p>
+    <p class="outset_border" style="border-style: outset;">I'm a paragraph with border outset.</p>
+
+    <h2>CSS Margins & Paddings</h2>
+    <div class="div_margin">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est pariatur necessitatibus quae recusandae deserunt dicta cum tempore possimus vitae officia, ipsum quidem dolor aperiam, enim harum sequi aliquid non voluptates?</p>
+    </div>
+
+</body>
+
+</html>

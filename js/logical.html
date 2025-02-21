@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Logical Operator Lesson</h1>
+    <script>
+        // && -> 'and' operator
+        console.log(12 > 10 && 3 > 2 && 12 > 19); //true && false && true = false
+
+        // || -> 'or' operator 
+        console.log(12 > 10 || 3 > 2 || 12 > 19); //true || false || true = true
+
+        if (12 > 10 && 3 > 2 && 12 > 19) {
+            document.write("hello");
+        }
+        if (12 > 10 || 3 > 2 || 2 > 19) {
+            document.write("Hello!");
+        }
+
+        // ! -> 'not' operator
+        let num = 3;
+        if (!num) {
+            document.write("Hi");
+        }
+        let nullNum;
+        if (!nullNum) {
+            document.write("Say Hi!");
+        }
+    </script>
+
+</body>
+
+</html>

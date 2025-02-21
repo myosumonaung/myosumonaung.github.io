@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Data Type Lesson</h1>
+    <script>
+        //string data type
+        // let name = "Myo";
+        // let name = 'Myo';
+        let name = `Myo`;
+        console.log(name);
+        console.log(typeof(name));
+
+        //number data type
+        let age = 26;
+        console.log("Age is " + age + ".");
+        console.log("Age's Datatype is " + typeof(age) + ".");
+
+        //Boolean data type -> true/false
+        let single = true;
+        console.log("Single is " + single);
+        console.log(typeof(single));
+        let x = 4;
+        let y = 4;
+        let z = 5;
+        console.log((x == y) + '<br>' + (x == z));
+
+        //undefined
+        let mylove;
+        console.log(mylove);
+
+        //null
+        let son = null;
+        console.log(son);
+        console.log(typeof(son));
+
+        //Array 
+        //array constructor new Array().
+        let alphabet = new Array('a', 'b', 'c', 'd');
+        console.log(alphabet);
+        console.log(alphabet[2]);
+        //But you can safely use [] instead.
+        let studentList = ['Alex', 'Joe', 'Helen', 'Koe', 'Nike'];
+        console.log(studentList);
+        console.log(studentList[4]);
+        //multi array
+        let myFav = ["rose", "dasie", "Lily", "Maples", ["jade", "diamond"]];
+        console.log(myFav);
+        console.log(myFav[4][0]);
+
+        //object
+        let carInfo = {
+            carName: "Honda Fix",
+            color: ["white", "black"],
+            number: '8M-234943',
+            model: '54d39'
+        }
+        console.log(carInfo);
+        console.log(carInfo.carName);
+        console.log(carInfo.color[0]);
+    </script>
+
+</body>
+
+</html>
