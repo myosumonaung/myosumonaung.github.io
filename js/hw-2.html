@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #eee9df;
+            text-align: center;
+            padding: 12px;
+            font-size: 20px;
+        }
+        
+        div {
+            width: 60%;
+            margin: auto;
+        }
+        
+        div>.text {
+            font-family: 'Gill Sans', sans-serif;
+            font-size: 25px;
+            color: #47763c;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: #47763c;font-weight: bold;font-style: italic;text-align: center;"> How Beautiful!</h1>
+
+    <div>
+        <p class="text">
+            Your Multiplication Table up to 12!
+        </p>
+    </div>
+
+    <script>
+        let yourdata = prompt("Input an integer.I'll find out multiplication table!");
+        for (let n = 1; n <= 12; n++) {
+            let result = n * yourdata;
+            document.write(`${yourdata} x ${n} = ${result}<br>`);
+        }
+    </script>
+
+</body>
+
+
+</html>
