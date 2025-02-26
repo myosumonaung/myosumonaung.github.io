@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Function</h1>
+
+    <script>
+        // naming-function
+        function showData() {
+
+            document.write(`<h1> This is naming function</h1>`);
+        }
+        showData();
+
+        // argument/parameter-function
+        // function functionName(parameter1, parameter2, parameter3) {
+        // code to be executed
+        // }functionName(parameter1, parameter2, parameter3);
+        function sum(num1, num2) {
+            document.write(`Result is ${num1+num2}<br>`);
+        }
+        sum(66, 77);
+
+        // default-function
+        function multi(num1 = 10, num2 = 25) {
+            document.write(`This multi result is ${num1 * num2}<br>`);
+        }
+        multi();
+        multi(7, 4);
+    </script>
+
+</body>
+
+</html>
