@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess</title>
+</head>
+
+<body>
+    <h2>Number Guess</h2>
+    <script>
+        let screctNum = 5;
+        let attempts = 0;
+        let guessNum = Number(prompt('Guess the number between 1 and 20!'));
+
+        while (screctNum != guessNum) {
+            if (guessNum < screctNum) {
+                alert("Your number is lower,Try again");
+            } else {
+                alert("Your number is higher,Try again");
+            }
+            guessNum = Number(prompt('Guess the number between 1 and 20!'));
+            attempts++;
+        }
+        document.write("Congratulations, you guessed it!<br>");
+        document.write(`Your Attempts: ${attempts}`);
+    </script>
+
+</body>
+
+</html>
