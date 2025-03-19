@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        div {
+            max-width: 50%;
+            margin: auto;
+            padding: 20px;
+            justify-content: center;
+            display: grid;
+        }
+        
+        button {
+            display: inline-block;
+            padding: .75rem 1.5rem;
+            font-size: 1.2rem;
+            box-sizing: border-box;
+            border-radius: 8px;
+            background-color: #7ab977;
+            color: #fff;
+            border: #7ab977;
+            justify-content: center;
+        }
+        
+        img {
+            max-width: 150px;
+            padding: 50px 0;
+            position: relative;
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <button id="start">Start Clover!</button>
+        <img src="clover.jpg" alt="clover">
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#start').click(function() {
+                $('img').animate({
+                    left: '200px'
+                }, 3000);
+                $('img').animate({
+                    top: '200px'
+                }, 3000);
+                $('img').animate({
+                    left: '0px'
+                }, 3000);
+                $('img').animate({
+                    top: '0px'
+                }, 3000);
+            });
+
+            // For button hover 
+            $('button').hover(function() {
+                $(this).css('background-color', '#b0c865');
+            }, function() {
+                $(this).css('background-color', '#7ab977');
+            });
+        })
+    </script>
+
+</body>
+
+</html>
