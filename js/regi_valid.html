@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: arial;
+            font-size: 16px;
+            margin: 0;
+            background: #068abc;
+            color: #000;
+            display: flex;
+            min-height: 100vh;
+            justify-content: space-around;
+            align-items: center;
+        }
+        
+        .form_box {
+            width: 450px;
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 7px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        .input-row {
+            margin-bottom: 13px;
+            position: relative;
+        }
+        
+        .form_box input:not([type=”submit”]),
+        .form_box select {
+            font-family: arial;
+            width: 100%;
+            margin: 0 0 3px;
+            padding: 13px 15px;
+            font-size: 20px;
+            color: #000;
+            border-radius: 5px;
+            background: #d3d1d1;
+            border: 1px solid transparent
+        }
+        
+        .error {
+            font-weight: 500;
+            display: none;
+        }
+        
+        .form_box input[type="submit"] {
+            padding: 10px 50px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 8px;
+            border: 0;
+            color: #fff;
+            background: #00668d;
+            margin: 0 auto;
+            display: block;
+        }
+        
+        .form_box input[type=”submit”]:hover {
+            background: #000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <form action="valid.html" id="customForm" name="custom_form" onsubmit="return formValid()">
+            <div class="form_box">
+                <div class="input_row">
+                    <label for="name">Name:</label><br>
+                    <input type="text" name="name">
+                    <span class="error">Enter name</span>
+                </div>
+                <!-- <div class="input_row">
+                   
+                    <input type="text" name="name">
+                    <span class="error">Enter name</span>
+                </div> -->
+                <div class="input_row">
+                    <label for="email">Email:</label><br>
+                    <input type="email" name="email">
+                    <span class="error">Enter email</span>
+                </div>
+                <div class="input_row">
+                    <label for="password">Password:</label><br>
+                    <input type="password" name="password">
+                    <span class="error">Enter password</span>
+                </div>
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function formValid() {
+            // alert('ok');
+            var name = document.custom_form.name;
+            var email = document.custom_form.email;
+            var password = document.custom_form.password;
+
+            // For name valid
+            if (name.value == '') {
+                name.
+            }
+
+        }
+    </script>
+
+</body>
+
+</html>

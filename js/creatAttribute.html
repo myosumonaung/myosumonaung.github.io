@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- creat set attribute -->
+
+    <h2>The createAttribute() and setAttributeNode() Methods</h2>
+    <p>Create a style attribute that adds a red color to the h1 element.</p>
+    <!-- syntax => document.createAttribute(para) -->
+    <script>
+        // creat a class attribute
+        const att = document.createAttribute('style');
+
+        //set the value of the class attribute
+        att.value = 'color:blue';
+
+        // add the class attribute to the first h2
+        const h2 = document.getElementsByTagName('h2')[0];
+        h2.setAttributeNode(att);
+    </script>
+    <hr>
+
+    <!-- creat get attribute with function -->
+    <p id="getAttribute" style="color:red">This is getAttribute.</p>
+    <button onclick="creategetAttribute()">Creat get Attribute</button>
+
+    <script>
+        function creategetAttribute() {
+            // const getAtt = document.getElementById('setAttribute');
+            const getAtt = document.querySelector('#getAttribute');
+
+            // syn => element.getAttribute(para)
+            console.log(getAtt.getAttribute('style'));
+        }
+    </script>
+</body>
+
+</html>

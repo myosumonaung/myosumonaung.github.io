@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="jquery-3.7.1.min.js"></script>
+    <style>
+        .home {
+            max-width: 200px;
+            background-color: cadetblue;
+            color: white;
+            padding: 50px 0;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <p id="click">I want to go home.</p>
+    <button id="add-class">Add Class</button>
+    <button id="remove-class">Remove Class</button>
+    <button id="toggle">Toggle between hiding and showing the paragraph</button>
+
+    <script>
+        $(document).ready(function() {
+            $("#add-class").click(function() {
+                $("p").addClass("home");
+            });
+            $("#remove-class").click(function() {
+                $("p").removeClass("home");
+            });
+            //toggle() between hiding and showing an element/para
+            $("#toggle").click(function() {
+                $("p").toggleClass("home");
+            });
+        })
+    </script>
+
+</body>
+
+</html>

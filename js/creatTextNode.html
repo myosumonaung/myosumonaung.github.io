@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>The Document Object</h1>
+    <p>Create a p element with some text:</p>
+    <button onclick="creatElementLesson()">creatElementNode</button>
+    <hr>
+
+    <h2>creatElement without function</h2>
+
+    <script>
+        // createElement() method creates an element node
+        // syntax -> document.createElement(para)
+        function creatElementLesson() {
+            // alert('Ok');
+            const h3 = document.createElement('h3');
+            // console.log(h3);
+            h3.innerText = "This is creatElement";
+            // console.log(h3);
+            document.body.appendChild(h3); //Append to body
+        }
+
+        //creatElement without function
+        const para = document.createElement('p');
+        para.innerText = "This is paragraph";
+
+        //Append to body
+        document.body.appendChild(para);
+    </script>
+
+</body>
+
+</html>

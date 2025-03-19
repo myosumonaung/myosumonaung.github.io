@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <title>Document</title>
+    <style>
+        #loading {
+            transition: all 1s;
+            background-color: #ddd;
+            position: fixed;
+            inset: 0;
+            z-index: 9999;
+            display: grid;
+            place-items: center;
+        }
+        
+        .spinner {
+            width: 200px;
+            height: 200px;
+        }
+        
+        .loaded {
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        #clockDisplay {
+            font-size: 4rem;
+            width: 900px;
+            margin: 200px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="loading">
+        <img class="spinner" src="https://assets.codepen.io/85188/loading.png" alt="">
+    </div>
+    <div id="clockDisplay"></div>
+
+    <script>
+        const loading = document.addEventListener("loading");
+        window.addEventListener('load', () => {
+            loading.classList.add('loaded');
+        });
+
+        function displayTime() {
+            let currentTime = new Date();
+            let h = currentTime.getHours();
+            let m = currentTime.getMinutes();
+            let s = currentTime.getSeconds();
+            let ampm = "AM";
+
+            if (h == 0) {
+                h = 12;
+            } else if (h > 12) {
+                h -= 12;
+                ampm = "PM";
+            }
+            h = h < 10 ? "0" + h : h;
+            m = m < 10 ? "0" + m : m;
+            s = s < 10 ? "0" + s : s;
+
+            // var dgClock = document.getElementById('clockDisplay');
+            const dgClock = document.querySelector('#clockDisplay');
+            dgClock.textContent = h + ':' + m + ':' + s + " " + ampm;
+            setInterval('displayTime()', 1000);
+
+        }
+        displayTime();
+    </script>
+
+</body>
+
+</html>

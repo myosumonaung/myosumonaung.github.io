@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Event Lessons</h1>
+    <img id="myImg" src="C:\Users\MSMA\Pictures\8.png" alt="" width="100" height="100" onmouseenter="big()" onmouseleave="normal()" onclick="sobig()">
+
+    <script>
+        function big() {
+            document.getElementById('myImg').style.width = '300px';
+            document.getElementById('myImg').style.height = '300px';
+        }
+
+        function normal() {
+            document.getElementById('myImg').style.width = '100px';
+            document.getElementById('myImg').style.height = '100px';
+        }
+
+        function sobig() {
+            document.getElementById('myImg').style.width = '500px';
+            document.getElementById('myImg').style.width = '500px';
+        }
+    </script>
+    <hr>
+    <input type="text" id="myInput" onchange="showData()">
+    <p id="result"></p>
+    <script>
+        function showData() {
+            let myInput = document.querySelector('#myInput').value;
+            document.querySelector('#result').innerHTML = myInput;
+        }
+    </script>
+
+</body>
+
+</html>
