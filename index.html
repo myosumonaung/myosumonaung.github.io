@@ -1,3 +1,225 @@
-<h1>Hello World!</h1>
-<h2>My name is MSMA.</h2>
-<h2>I live in Osaka.</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ローディング画面 -->
+<div id="loading">
+    <p>Loading...</p>
+    <div id="loading-screen"></div>
+</div>
+
+<!-- ナビゲーションメニュー -->
+<nav>
+    <button id="menu-open" class="btn-menu">
+        <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <title>開く</title>
+            <path clip-rule="evenodd" d="m4.25 8c0-.41421.33579-.75.75-.75h14c.4142 0 .75.33579.75.75s-.3358.75-.75.75h-14c-.41421 0-.75-.33579-.75-.75zm0 4c0-.4142.33579-.75.75-.75h14c.4142 0 .75.3358.75.75s-.3358.75-.75.75h-14c-.41421 0-.75-.3358-.75-.75zm.75 3.25c-.41421 0-.75.3358-.75.75s.33579.75.75.75h14c.4142 0 .75-.3358.75-.75s-.3358-.75-.75-.75z" fill-rule="evenodd"/>
+        </svg>
+    </button>
+    <div id="menu-panel">
+        <button id="menu-close" class="btn-menu">
+            <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <title>閉じる</title>
+                <path clip-rule="evenodd" d="m7.53033 6.46967c-.29289-.29289-.76777-.29289-1.06066 0s-.29289.76777 0 1.06066l4.46963 4.46967-4.46963 4.4697c-.29289.2929-.29289.7677 0 1.0606s.76777.2929 1.06066 0l4.46967-4.4696 4.4697 4.4696c.2929.2929.7677.2929 1.0606 0s.2929-.7677 0-1.0606l-4.4696-4.4697 4.4696-4.46967c.2929-.29289.2929-.76777 0-1.06066s-.7677-.29289-1.0606 0l-4.4697 4.46963z" fill-rule="evenodd"/>
+            </svg>
+        </button>
+        <ul class="menu-list">
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skill">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="mailto:hello@example.com">Contact</a></li>
+        </ul>
+    </div>
+</nav>
+    
+<section class="hero" >
+    <h2 class="title">MYO's <br>Portfolio</h2>
+    <!-- <h1 class="title">MYO'S<br>Portfolio</h1> -->
+      <!-- The slideshow/carousel -->
+</section>
+    
+<section class="concept" id="about">
+    <div class="wrapper">
+        <h2 class="title fadein">About Me</h2>
+        <p class="fadein">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem earum consequuntur odit repudiandae exercitationem optio qui nesciunt consequatur, totam facilis corrupti ducimus odio reprehenderit. Eum quidem nam blanditiis, explicabo id temporibus repudiandae, modi, distinctio dignissimos iure odit quibusdam vel nihil dolor minus facere esse! Molestiae est, explicabo assumenda dolores laboriosam magnam quidem voluptatum aliquam, cum reprehenderit temporibus perferendis impedit. Aut excepturi sint quaerat ipsum. Repellendus commodi atque molestias ipsam inventore minus voluptatibus deserunt error quam aut iste quasi cum tempora, voluptatem ad exercitationem magni possimus perspiciatis? Qui necessitatibus at molestiae odit consequuntur! Ipsum pariatur omnis saepe culpa tempora ducimus repudiandae.
+        </p>
+    </div>
+    <img src="../images/myo_1.jpg" alt="">
+</section>
+
+<section class="gallery" id="projects">
+    <div class="gallery-image">
+    <img src="../images/gallery1.jpg" alt="">
+    </div>
+    <div class="gallery-content wrapper">
+        <h2 class="title fadein">Projects</h2>
+        <ul class="gallery-thumbnails">
+            <li class="fadein"><img src="../images/app-1.jpg" alt=""></li>
+            <li class="fadein"><img src="../images/books-1.jpg" alt=""></li>
+            <li class="fadein"><img src="../images/branding-1.jpg" alt=""></li>
+            <li class="fadein"><img src="../images/product-1.jpg" alt=""></li>
+            <li class="fadein"><img src="../images/masonry-portfolio-1.jpg" alt=""></li>
+            <li class="fadein"><img src="../images/masonry-portfolio-2.jpg" alt=""></li>
+            <!-- <li class="fadein"><img src="https://assets.codepen.io/85188/img7.jpg" alt=""></li>
+            <li class="fadein"><img src="https://assets.codepen.io/85188/img8.jpg" alt=""></li>
+            <li class="fadein"><img src="https://assets.codepen.io/85188/img9.jpg" alt=""></li> -->
+        </ul>
+    </div>
+</section>
+
+
+
+<!-- Expertise Start -->
+<section class="container-xxl py-6 pb-5 mt-5" id="skill">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
+                    <h1 class="display-5 mb-5">Skills & Experience</h1>
+                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum clita dolor duo clita sit.</p>
+                    <h3 class="mb-4">My Skills</h3>
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">HTML</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-primary" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">CSS</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-warning" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">PHP</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Javascript</h6>
+                                    <h6 class="font-weight-bold">90%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-danger" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Angular JS</h6>
+                                    <h6 class="font-weight-bold">95%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-dark" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                            <div class="skill mb-4">
+                                <div class="d-flex justify-content-between">
+                                    <h6 class="font-weight-bold">Wordpress</h6>
+                                    <h6 class="font-weight-bold">85%</h6>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar bg-info" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
+                    <ul class="nav nav-pills rounded border border-2 border-primary mb-5">
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5 active" data-bs-toggle="pill" href="#tab-1">Experience</button>
+                        </li>
+                        <li class="nav-item w-50">
+                            <button class="nav-link w-100 py-3 fs-5" data-bs-toggle="pill" href="#tab-2">Education</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="tab-1" class="tab-pane fade show p-0 active">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5>HeartBeat</h5>
+                                    <hr class="text-primary my-2">
+                                    <h6 class="mb-0">大学3年生</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Automatic-Writing Machine</h5>
+                                    <hr class="text-primary my-2">
+                                    <h6 class="mb-0">大学4年生</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Projects Inspector-Volunteer</h5>
+                                    <hr class="text-primary my-2">
+                                    <h6 class="mb-0">大学5年史</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Twitter Clone</h5>
+                                    <hr class="text-primary my-2">
+                                    <h6 class="mb-0">大学6年生</h6>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab-2" class="tab-pane fade show p-0">
+                            <div class="row gy-5 gx-4">
+                                <div class="col-sm-6">
+                                    <h5>Electronic and Communication Engineering</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2014 - 2021</p>
+                                    <h6 class="mb-0">Cambridge University</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Web Design and Programming Basic</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2019</p>
+                                    <h6 class="mb-0">Gusto College</h6>
+                                </div>
+                                <div class="col-sm-6">
+                                    <h5>Web Development Bootcamp</h5>
+                                    <hr class="text-primary my-2">
+                                    <p class="text-primary mb-1">2020</p>
+                                    <h6 class="mb-0">Myanmar IT</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!-- Expertise End -->
+
+<section class="info">
+    <div class="info-content wrapper">
+        <h3 class="title fadein">Favourite Proverb</h3>
+        <p class="fadein">Let Them!</p>
+        <a class="btn fadein" href="#">Go</a>
+    </div>
+</section>
+
+<script src="script.js"></script>
+    
+</body>
+</html>
